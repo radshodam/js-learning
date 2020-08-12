@@ -18,7 +18,7 @@
             </div>
             <div><button onclick="setValue('2')">2</button></div>
             <div><button onclick="setValue('3')">3</button></div>
-            <div><button>+</button></div>
+            <div><button onclick="keepValue('+')">+</button></div>
         </div>
         <div class="buttons">
             <div>
@@ -26,7 +26,7 @@
             </div>
             <div><button onclick="setValue('5')">5</button></div>
             <div><button onclick="setValue('6')">6</button></div>
-            <div><button>-</button></div>
+            <div><button onclick="keepValue('-')">-</button></div>
         </div>
         <div class="buttons">
             <div>
@@ -34,15 +34,19 @@
             </div>
             <div><button onclick="setValue('8')">8</button></div>
             <div><button onclick="setValue('9')">9</button></div>
-            <div><button>*</button></div>
+            <div><button onclick="keepValue('*')">*</button></div>
         </div>
         <div class="buttons">
             <div>
-                <button>/</button>
+                <button onclick="keepValue('/')">/</button>
             </div>
             <div><button>%</button></div>
-            <div><button>.</button></div>
-            <div><button>=</button></div>
+            <div><button onclick="setValue('.')">.</button></div>
+            <div><button onclick="showResult()">=</button></div>
+        </div>
+        <div class="buttons">
+            <div><button onclick="setValue('0')">0</button></div>
+            <div><button onclick="cls()">C</button></div>
         </div>
     </div>
 
